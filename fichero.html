@@ -28,15 +28,15 @@
       <div class="form-group">
         <div class="col-xs-4 col-md-8">
           <label for="nombre" class="control-label col-md-2">Nombres</label>
-          <div class="col-md-10">
+          <div class="col-md-8">
             <input type="text" class="form-control" placeholder="-" required>
           </div>
         </div>
-        <div class="col-xs-4 col-md-8 mb-3">
+        <div class="col-xs-4 col-md-8">
           <label>Apellidos</label>
           <input type="text" class="form-control" placeholder="-" required>
         </div>
-        <div class="col-xs-4 col-md-8 mb-3">
+        <div class="col-xs-4 col-md-8">
           <label>Correo electrónico</label>
           <div class="input-group">
             <div class="input-group-prepend">
@@ -55,9 +55,15 @@
           <label>Dirección</label>
           <input type="text" class="form-control" placeholder="-" required>
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-md-8 mb-3">
           <label>Departamento</label>
-          <input type="text" class="form-control" placeholder="-" required>
+          <select class="custom-select" required>
+                <option value="1">Lima</option>
+                <option value="2">Piura</option>
+                <option value="3">Trujillo</option>
+                <option value="3">Arequipa</option>
+                <option value="3">Huancayo</option>
+          </select>
         </div>
       </div>
     </form>
