@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.alltxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    text-align: justify;
+    color:dimgrey;
+    }
+
+.scale{
+    position: fixed;
+    top: 0;
+}
+
+.txtprsup{
+background-color: #e6beae;
+height: 60px;
+width: 220%;
+margin: auto;
+text-align: center;
+color: #2d3142;
+font-size: 60px;
+font-family: 'Chewy', cursive;
+padding: 0.625rem 1.875rem 1.875rem 3.125rem;
+}
+
+.intro{
+    display: flex;
+    justify-content: start;
+    padding-top: 6.875rem;
+    padding-left: 5rem;    
+}
+
+
+.boton1{
+    float: left;
+    list-style: none;
+    padding: 0.4375rem 0.3125rem 0.4375rem 0.3125rem;
+    margin-top: 0rem;
+    margin-right: 1.25rem;
+    margin-left: 6.25rem;
+    border-width: 0.1875rem;
+    border-style: none;
+    background-color: #1D2D44;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-color: 100em;
+}
+
+.boton1:hover{
+    transform: scale(2);
+}
+
+.boton2{
+    float: left;
+    list-style: none;
+    padding: 0.4375rem 0.3125rem 0.4375rem 0.3125rem;
+    margin-top: 0px;
+    margin-left: 0.625rem;
+    border-width: 0.1875rem;
+    border-style: none;
+    background-color: #1D2D44;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-color: 100em;
+}
+
+.boton2:hover{
+    transform: scale(2);
+}
+
+ul li a{
+    text-decoration: none;
+    color: #e9ecef;
+}
+
+
+.titularPer, .titularGat {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding-top: 1.875rem;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+}
+
+.grid-container div{
+    padding:1em;
+}
+
+.grid-container div:hover{
+    border: 2px solid #1D2D44;
+}
+
+.grid-containergato{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+}
+
+.grid-containergato div{
+    padding:1em;
+}
+
+.grid-containergato div:hover{
+    border: 2px solid #1D2D44;
+}
+
+.end{
+background-color: #1D2D44;
+height: 20px;
+color: #e9ecef;
+text-align: center;
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+}
+

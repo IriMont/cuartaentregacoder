@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background: url(../IMG/FondoBlanco.PNG);
+    width: 100%;
+    max-width: 1200px;
+}
+
+section{
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgb (0,0,0,0.1);
+    padding: 5px;
+}
+
+
+/*Header*/
+
+.encabezado{
+    position: fixed;
+    z-index: 2;  
+}
+
+.txtsup{
+    background-color: #1D2D44;
+    height: 60px;
+    width: 1300px;
+    text-align: center;
+    color: #e9ecef;
+    font-size: 45px;
+    font-family: 'Chewy', cursive;
+    
+}
+
+section p{
+    color: dimgray;
+    font-weight: 600;
+    position: relative;
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+
+.PrimeraCaja{
+    margin-left: 25%; 
+    z-index: 1;
+}
+
+.PrimeraCaja:focus{
+    border: 1px solid #1D2D44;
+}
+
+
+.was-validated{
+    margin-left: 25%;
+}
+
+.form-group-2{
+    margin-left: 25%;
+}
+
+.card-body button{
+    background-color: #1D2D44;
+    border-color: #1D2D44;
+}
+
+@media screen and (max-width:480px) {
+section p{
+ font-size: 10px;
+ padding-top: 80px;
+ text-align: center;
+ padding-right: 120px;
+ padding-left: 15px;
+}
+
+
+.PrimeraCaja{
+    font-size: 12px;
+    margin-right: 120px;
+}
+
+.txtsup{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: -10px;
+}
+
+.was-validated{
+    font-size: 12px;
+}
+
+.form-group select{
+    font-size: 10px;
+}
+
+.form-group-2 label{
+    font-size: 10px;
+
+}
+
+.card-body button{
+    font-size: 12px;
+}
+
+}
+
+
+
+

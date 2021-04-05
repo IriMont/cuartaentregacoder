@@ -1,0 +1,328 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: content-box;
+}
+
+
+/*Header*/
+
+.alltxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    text-align: justify;
+    width: 78.75em;
+    }
+
+
+.container-fluid {
+    background-color: #1D2D44; 
+}
+
+.navbar-collapse li a{
+    color: #e9ecef;
+    font-weight: bolder;
+    margin-left: 100px;
+    font-size: 23px;
+}
+
+.nav-link:hover{
+    background-color: #e9ecef;
+    color: #1D2D44;
+    font-size: 1.4375rem;
+}
+
+.menu-gral{
+    overflow: hidden;
+}
+
+
+/*Primera sección*/
+#Perdidos{
+position: relative;
+display: inline-block;
+
+}
+
+.titular1{
+    position: absolute;
+    top: 21.25rem;
+    font-family:'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #284b63;
+    font-weight: bold;
+    background-color: ivory;
+    border-left: 0.5rem solid #1D2D44;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0;
+    margin-right: 23.375rem;
+}
+
+@media screen and (max-width:480px) {
+    .titular1{
+    font-size: 25px;
+    text-align: center;
+    padding-right: 450px;
+    }
+
+    .fotoclave{
+        width: 37%;
+        height: 520px;
+    }
+}
+
+/*Segunda sección*/
+#AboutUs{
+    border-left: 0.5rem solid #1D2D44;
+    background-color: #e9ecef;
+    height: 25rem;
+}
+
+.txt1{
+    font-size: 2.1875rem;
+    font-family: 'Chewy', cursive;
+    color: #606c38;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.txtmdio {
+    text-align: center;
+    font-weight: 900;
+    color: dimgray;
+}
+
+.CajasPrincipal{
+display: flex;
+justify-content: space-around;
+margin: 4.375rem 1.25rem 4.375rem 1.25rem;
+font-weight: 900;
+color: dimgray;
+}
+
+@media screen and (max-width:480px) {
+    .txt1{
+    font-size: 18px;
+    padding-right: 750px;
+    }
+
+    .txtmdio{
+    font-size: 13px;
+    padding-right: 800px;
+    }
+
+    .CajasPrincipal{
+        padding-right: 800px;
+    }
+
+    .icono{
+        width: 60px;
+        height: 60px;
+        align-items: center;
+    }
+
+   .CajasPrincipal p{
+       font-size: 12px;
+   }
+}
+
+
+/*Cuarta sección*/
+#ColaboraAlbergues{
+border-left: 0.5rem solid #1D2D44;
+background-color: #e9ecef;
+height: 25rem;
+margin-bottom: 0.625rem;
+margin-top: 0.3125rem;
+}
+
+.container-video{
+    text-align: center;
+    padding: 107px 30px 20px 140px;
+    margin-left: 520px;
+    }
+
+.txt2 {
+    font-size: 35px;
+    font-family: 'Chewy', cursive;
+    color: #606c38;
+    
+}
+
+.txt3{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    color: dimgray;
+}
+
+.btn{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    }
+
+.btn:hover{
+    font-size: 18px;
+}
+
+.VideoOne{
+    width: 200px;
+    height: 12.5rem;
+    float: left;
+    margin-top: -275px;
+}
+
+@media screen and (max-width:480px) {
+
+    .container-video{
+        padding-right: 300px;
+    }
+
+    .VideoOne{
+        display: none;
+    }
+}
+
+/*Tercera sección*/
+
+#Historias_felices{
+    height: 420px;
+    margin-bottom: 0.625rem;
+    margin-top: 0.3125rem;   
+}
+
+.txt4{
+    font-size: 35px;
+    font-family: 'Chewy', cursive;
+    color: #606c38;
+    text-align:center;
+    padding-top: 16px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.texto{
+    padding-top: 90px;
+    padding-right: 40px;
+    padding-left: 50px;
+    font-weight: 900;
+    color: dimgray;
+    text-align: center;
+}
+
+#carouselExampleControls{
+    padding-top: -70px;
+}
+
+.carousel-item p{
+    font-size: 16px;
+    color: #1D2D44;
+    background-color: gainsboro;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: -2%;
+    border-radius: 7%;
+
+}
+
+.carousel-item h5{
+    font-size: 20px;
+    background-color: #1D2D44;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -20%;
+}
+
+@media screen and (max-width:480px) {
+    .txt4{
+        font-size: 18px;
+        padding-right: 770px;
+    }
+
+    .texto{
+        font-size: 13px;
+        padding-right: 200px;
+    }
+
+    .carouselExampleCaptions{
+        padding-right: 700px;
+
+    }
+    
+}
+
+/*footer*/
+
+.container{
+    max-width: 1170px;
+    
+}
+
+.row{
+   color: antiquewhite;
+}
+
+.footer{
+    background-color: #1D2D44;
+    height: 60px;
+}
+
+.col-6{
+    transition: all 0.4s ease;
+}
+
+.col-6:hover{
+    padding-left: 30px;
+}
+
+.col{
+    transition: all 0.4s ease;
+}
+
+.col:hover{
+    padding-left: 30px;
+}
+
+.img{
+    width: 80%;
+    height: 60px;
+}
+
+.redessociales{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    
+}
+
+.final{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.final a{
+    color: antiquewhite;
+}   
+
+}
+    
+@media screen and (max-width:480px){
+    .row div{
+        width: 100%;
+    }
+    
+}
