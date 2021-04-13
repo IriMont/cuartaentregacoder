@@ -1,3 +1,215 @@
+/*Header*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
 
+.container-fluid {
+  background-color: #1D2D44;
+}
+
+.navbar-collapse {
+  margin-left: -10px;
+}
+.navbar-collapse li a {
+  color: #e9ecef;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+  color: #1D2D44;
+  font-size: 16px;
+}
+
+#Perdidos {
+  height: 500px;
+}
+#Perdidos .titular1 {
+  position: absolute;
+  top: 450px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #284b63;
+  font-weight: bold;
+  background-color: ivory;
+  border-left: 0.5rem solid #1D2D44;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0;
+  margin-right: 23.375rem;
+}
+
+#AboutUs {
+  height: 400px;
+}
+#AboutUs .txt1 {
+  font-size: 35px;
+  text-align: center;
+  color: #606c38;
+  font-family: "Chewy", cursive;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+#AboutUs .txtmdio {
+  text-align: center;
+}
+#AboutUs .CajasPrincipal {
+  display: flex;
+  justify-content: space-around;
+  margin: 4.375rem 1.25rem 4.375rem 1.25rem;
+  font-weight: 600;
+}
+
+#anuncios {
+  border-left: 0.5rem solid #1D2D44;
+}
+#anuncios .titular2 {
+  font-size: "Chewy", cursive;
+  color: #606c38;
+  font-family: "Chewy", cursive;
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#anuncios .card-deck {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+}
+#anuncios .card-deck .card {
+  text-align: center;
+}
+#anuncios .card-deck .card img {
+  height: 18.75rem;
+  width: 18.75rem;
+  margin-left: 14%;
+}
+
+#Historias_felices {
+  height: 400px;
+}
+#Historias_felices .txtcr {
+  font-size: 35px;
+  color: #606c38;
+  font-family: "Chewy", cursive;
+  text-align: center;
+  padding-top: 25px;
+}
+#Historias_felices .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#Historias_felices .texto {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15%;
+  font-size: 14px;
+  padding-left: 10%;
+  padding-right: 15%;
+}
+#Historias_felices .carousel-1 .carousel-item h5 {
+  font-size: 20px;
+  background-color: #1D2D44;
+  font-family: "Poppins", sans-serif;
+  margin-top: -20%;
+  margin-right: 15%;
+}
+#Historias_felices .carousel-1 .carousel-item h5 p {
+  font-size: 16px;
+  font-family: 14px;
+  font-weight: bold;
+  margin-top: 10%;
+  border-radius: 7%;
+  padding-right: 15%;
+  color: #1D2D44;
+  background-color: gainsboro;
+}
+
+#ColaboraAlbergues {
+  border-left: 0.5rem solid #1D2D44;
+  margin-bottom: 0.625rem;
+  margin-top: 0.3125rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
+}
+#ColaboraAlbergues .VideoOne {
+  width: 150px;
+  height: 150px;
+  float: left;
+  padding-top: 15px;
+}
+#ColaboraAlbergues .container-video {
+  text-align: center;
+  padding: 70px 30px 20px 4px;
+  margin-left: 20px;
+}
+#ColaboraAlbergues .container-video .txt2 {
+  font-size: 35px;
+  font-family: "Chewy", cursive;
+  color: #606c38;
+  padding-top: 45px;
+}
+#ColaboraAlbergues .container-video .txt3 {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#ColaboraAlbergues .container-video .btn {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#ColaboraAlbergues .container-video .btn:hover {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #1D2D44;
+  max-width: 1500px;
+  overflow: hidden;
+  font-size: 14px;
+  height: 80px;
+}
+.footer .row {
+  color: whitesmoke;
+  text-align: center;
+}
+.footer .col {
+  transition: all 0.4s ease;
+}
+.footer .col:hover {
+  padding-left: 30px;
+}
+.footer .col-6 {
+  transition: all 0.4s ease;
+}
+.footer .col-6:hover {
+  padding-left: 30px;
+}
+.footer .col-6 .final {
+  font-size: 17px;
+  margin-top: 27px;
+}
+.footer .col-6 .final a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+.footer .col .img {
+  margin-right: 20px;
+}
+.footer .col .redessociales {
+  font-size: 17px;
+  margin-top: 21px;
+  margin-left: 27px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,290 @@
+$fontprinp: 'Poppins', sans-serif;
+$sizefontgral: 14px;
+$colorcentral: #1D2D44;
+$colortitular: #606c38;
+$colorsobre: antiquewhite;
+$fonttitular: 'Chewy', cursive;
+$alturabloque: 400px;
+$sizetitular: 35px;
+$medtoptit: 60px;
+$heightpart: 400px;
+
+
+
+/*Header*/
+
+body{
+    font-family: $fontprinp;
+    font-size: $sizefontgral;
+    text-align: justify;
+    
+}
+
+.container-fluid{
+    background-color: #1D2D44;
+}
+
+.navbar-collapse{
+    margin-left: -10px;
+    li{
+        a{
+            color: #e9ecef;
+            margin-left: 100px;
+            font:{
+                size: 16px;
+                weight: bolder
+            }
+        }
+    }
+
+}
+
+.nav-link:hover{
+    background-color: #e9ecef;
+    color: #1D2D44;
+    font-size: 16px;
+}
+
+
+
+#Perdidos{
+    height: 500px;
+    .titular1{
+    position: absolute;
+    top: 450px;
+    font-family:$fontprinp;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #284b63;
+    font-weight: bold;
+    background-color: ivory;
+    border-left: 0.5rem solid $colorcentral;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0;
+    margin-right: 23.375rem;
+    }
+}
+
+#AboutUs{
+    height: $heightpart;
+    
+    .txt1{
+        font-size: $sizetitular;
+        text-align: center;
+        color: $colortitular;
+        font-family: $fonttitular;
+        padding:{
+            right: 20px;
+            top: $medtoptit;
+        }
+    }
+
+    .txtmdio{
+        text-align: center;
+    }
+
+    .CajasPrincipal{
+        display: flex;
+        justify-content: space-around;
+        margin: 4.375rem 1.25rem 4.375rem 1.25rem;
+        font-weight: 600;
+        }
+}
+
+#anuncios{
+    border-left: 0.5rem solid $colorcentral;
+
+    .titular2{
+        font-size: $fonttitular;
+        color: $colortitular;
+        font-family: $fonttitular;
+        text-align: center;
+        padding:{
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+
+    .card-deck{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 50px;
+        .card{
+            text-align: center;
+        }
+        .card img{
+            height: 18.75rem;
+            width: 18.75rem;
+            margin-left: 14%;
+            
+        }
+    }
+}
+
+#Historias_felices{
+    height: $heightpart;
+
+    .txtcr{
+        font-size: $sizetitular;
+        color: $colortitular;
+        font-family: $fonttitular;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        }
+
+        .texto{
+            text-align: center;
+            font-weight: 600;
+            margin-top: 15%;
+            font-size: $sizefontgral;
+            padding:{
+                left: 10%;
+                right: 15%;
+            }
+        }  
+
+        .carousel-1{
+            .carousel-item{
+                 h5{
+                    font-size: 20px;
+                    background-color: $colorcentral;
+                    font-family: $fontprinp;
+                    margin-top: -20%;
+                    margin-right: 15%;
+           
+                 p{
+                    font-size: 16px;
+                    font-family: $sizefontgral;
+                    font-weight: bold;
+                    margin-top: 10%;
+                    border-radius: 7%;
+                    padding-right: 15%;
+                    color: #1D2D44;
+                    background-color: gainsboro;
+                 }
+
+            }
+        }
+    }
+}
+
+#ColaboraAlbergues{
+    border-left: 0.5rem solid $colorcentral;
+    margin-bottom: 0.625rem;
+    margin-top: 0.3125rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 400px;
+   
+
+    .VideoOne{
+        width: 150px;
+        height: 150px;
+        float: left;
+        padding-top: 15px;
+    }
+
+    .container-video{
+        text-align: center;
+        padding: 70px 30px 20px 4px;
+        margin-left: 20px;
+
+        .txt2{
+            font-size: 35px;
+            font-family: $fonttitular;
+            color: $colortitular;
+            padding-top: 45px;
+         
+        }
+
+        .txt3{
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn{
+            text-decoration: none;
+            font-weight: bold;
+            font:{
+                size: 15px;
+                weight: bold;
+            }
+            padding:{
+                bottom: 5px;
+                top: 5px;
+                right: 20px;
+                left: 20px;
+            }
+            &:hover{
+                font-size: 18px;
+            }
+        }
+
+        
+
+
+    }
+}
+
+.footer{
+    background-color: $colorcentral;
+    max-width: 1500px;
+    overflow: hidden;
+    font-size: 14px;
+    height: 80px;
+
+    .row{
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .col{
+        transition: all 0.4s ease;
+
+        &:hover{
+            padding-left: 30px;
+        }
+    }
+
+    .col-6{
+        transition: all 0.4s ease;
+
+        &:hover{
+            padding-left: 30px;
+        }
+
+        .final{
+            font-size: 17px;
+            margin-top: 27px;
+            a{
+                color: whitesmoke;
+                text-decoration: underline;
+            }
+        
+        }
+    }
+
+    .col{
+       .img{
+           margin-right: 20px;
+       }
+       
+        .redessociales{
+            font-size: 17px;
+            margin-top: 21px;
+            margin-left: 27px;
+
+
+        }
+    }
+
+
+            
+    
+}
