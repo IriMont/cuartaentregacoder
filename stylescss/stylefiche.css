@@ -6,7 +6,6 @@
 
 body{
     background: url(../IMG/FondoBlanco.PNG);
-    width: 100%;
     max-width: 1200px;
 }
 
@@ -24,10 +23,9 @@ section{
     z-index: 2;  
 }
 
-.txtsup{
+header{
     background-color: #1D2D44;
     height: 60px;
-    width: 1300px;
     text-align: center;
     color: #e9ecef;
     font-size: 45px;
@@ -39,25 +37,23 @@ section p{
     color: dimgray;
     font-weight: 600;
     position: relative;
-    padding-top: 8%;
-    display: flex;
-    justify-content: center;
-    padding-left: 80px;
+    padding-top: 2%;
+    padding-left: 120px;
 }
 
 
-.PrimeraCaja{
-    margin-left: 25%; 
+.caja-1, .caja-2, .caja-3{
+    margin-left: 5%; 
     z-index: 1;
 }
 
-.PrimeraCaja:focus{
+.caja-1:focus{
     border: 1px solid #1D2D44;
 }
 
 
 .was-validated{
-    margin-left: 25%;
+    margin-left: 5%;
 }
 
 .form-group-2{
@@ -70,25 +66,15 @@ section p{
 }
 
 @media screen and (max-width:480px) {
+
+
 section p{
  font-size: 10px;
- padding-top: 80px;
  text-align: center;
- padding-right: 120px;
- padding-left: 15px;
+ padding-right: 20px;
+ padding-left: 20px;
 }
 
-
-.PrimeraCaja{
-    font-size: 12px;
-    margin-right: 120px;
-}
-
-.txtsup{
-    font-size: 18px;
-    padding-top: 15px;
-    padding-left: -10px;
-}
 
 .was-validated{
     font-size: 12px;
@@ -100,11 +86,14 @@ section p{
 
 .form-group-2 label{
     font-size: 10px;
+    margin-left: 25%;
 
 }
 
+
 .card-body button{
     font-size: 12px;
+    margin-left: 25%;
 }
 
 }
