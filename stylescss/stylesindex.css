@@ -23,7 +23,6 @@ box-sizing: content-box;
 .navbar-collapse li a{
     color: #e9ecef;
     font-weight: bolder;
-    margin-left: 100px;
     font-size: 23px;
 }
 
@@ -59,18 +58,7 @@ display: inline-block;
     margin-right: 23.375rem;
 }
 
-@media screen and (max-width:480px) {
-    .titular1{
-    font-size: 25px;
-    text-align: center;
-    padding-right: 450px;
-    }
 
-    .fotoclave{
-        width: 37%;
-        height: 520px;
-    }
-}
 
 /*Segunda sección*/
 #AboutUs{

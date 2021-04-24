@@ -21,9 +21,8 @@
      <!--WOW JS-->
      <script src="Animaciones/WOW-master/dist/wow.min.js"></script>
      <!--Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-     rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
-     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <!--Iconos-->
      <link rel="stylesheet" href="fontawesome/css/all.css">
      
@@ -38,7 +37,7 @@
   <header class="menu-gral">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <img src="img/LogoAzul.JPG" alt="LogoPrin" width="18%" height="60px">
+        <img src="img/LogoAzul.JPG" alt="LogoPrin" width="18%" height="auto">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,8 +69,16 @@
   </section>
 
   <section id="AboutUs">
-    <h2 class="txt1">Quiénes somos y cómo ayudamos</h2> 
-    <p class="txtmdio">Somos un equipo centrado en lograr que cada peludo perdido regrese con su familia creando, a su vez, un red de ayuda. <br> Trabajamos sobre 3 pilares. </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-8">
+          <h2 class="txt1">Quiénes somos y cómo ayudamos</h2> 
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-8">
+          <p class="txtmdio">Somos un equipo centrado en lograr que cada peludo perdido regrese con su familia creando, a su vez, un red de ayuda. <br> Trabajamos sobre 3 pilares. </p>
+        </div>
+      </div>
+    </div>
 
    <div class="CajasPrincipal">
       <div class="animate__animated animate__bounce" animate__delay-2s wow slideInLeft>
@@ -96,7 +103,7 @@
   <!--Segunda parte-->
   <section id="anuncios">
     <h2 class="titular2">Peludos en búsqueda de su familia</h2>
-   <div class="card-deck">
+   <div class="card-deck" class="col-xs-12 col-md-4">
        <div class="card">
          <img src="img/Gato1.png" class="card-img-top" alt="perdido1">
          <div class="card-body">
@@ -122,10 +129,7 @@
      </div>
  </section>
 
-
-
-
-  <!--Tercera parte-->
+<!--Tercera parte-->
   <section id="Historias_felices">
     <div>
      <h2 class="txtcr">Historias felices</h2> 
@@ -167,16 +171,15 @@
         </div>
   
       
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden"></span>
         </button>
     </div>
-  
   </div>
       </div>  
 
@@ -220,6 +223,9 @@
      </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>
