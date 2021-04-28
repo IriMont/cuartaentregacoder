@@ -18,27 +18,30 @@ section{
 
 /*Header*/
 
-.encabezado{
+.container h1{
     position: fixed;
     z-index: 2;  
 }
 
-header{
+h1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     background-color: #1D2D44;
     height: 60px;
-    text-align: center;
     color: #e9ecef;
     font-size: 45px;
     font-family: 'Chewy', cursive;
     
 }
 
-section p{
-    color: dimgray;
-    font-weight: 600;
+.container p{
     position: relative;
-    padding-top: 2%;
-    padding-left: 120px;
+    margin-top: 90px;
+    font-weight: 600;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -47,8 +50,20 @@ section p{
     z-index: 1;
 }
 
-.caja-1:focus{
-    border: 1px solid #1D2D44;
+.caja-1 form input:focus{
+    border: 2px solid #1D2D44;
+}
+
+.caja-2 form input:focus{
+    border: 2px solid #1D2D44;
+}
+
+.caja-3 form input:focus{
+    border: 2px solid #1D2D44;
+}
+
+.caja-3 form select:focus{
+    border: 2px solid #1D2D44;
 }
 
 
