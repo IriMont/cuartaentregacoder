@@ -1,9 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  }
+
 /*Header*/
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   text-align: justify;
-  
+  overflow: auto;
+}
+
+header{
+  overflow: hidden;
 }
 
 .container-fluid {
@@ -14,6 +24,12 @@ body {
 .navbar-collapse {
   margin-left: -10px;
 }
+
+#navbarTogglerDemo03 ul li a{
+  color: #e9ecef;
+
+}
+
 .navbar-nav li a {
   color: whitesmoke;
   margin-left: 100px;
@@ -46,8 +62,15 @@ body {
 }
 
 @media screen and (max-width: 480px){
-  #Perdidos h1{
+  #Perdidos{
+    height: 80%;
+  }
+  
+  #Perdidos .titular1{
     font-size: 14px;
+    top: 260px;
+    padding: 15px;
+    width: 70%;
 
   }
   
@@ -61,88 +84,221 @@ body {
 #AboutUs {
   height: 400px;
 }
-#AboutUs .txt1 {
+#AboutUs h2 {
   font-size: 35px;
-  text-align: center;
+  padding-left: 400px;
   color: #606c38;
   font-family: "Chewy", cursive;
-  padding-right: 20px;
   padding-top: 60px;
 }
-#AboutUs .txtmdio {
+#AboutUs p {
   text-align: center;
+  padding-left: 30px;
 }
-#AboutUs .CajasPrincipal {
+
+.CajasIconos {
   display: flex;
   justify-content: space-around;
-  margin: 4.375rem 1.25rem 4.375rem 1.25rem;
-  font-weight: 600;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 480px){
+  #AboutUs{
+    height: 150%;
+  }
+  
+  #AboutUs h2{
+    font-size: 14px;
+    padding-left: 30%;
+    padding-top: 5%;
+  }
+
+  p{
+    font-size: 10px;
+  }
+
+  .CajasIconos {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .CajasIconos div img{
+    width: 30px;
+    height: 30px;
+    margin-left: 40%;
+  }
+
 }
 
 #anuncios {
   border-left: 0.5rem solid #1D2D44;
 }
-#anuncios .titular2 {
-  font-size: "Chewy", cursive;
+#anuncios h3 {
+  font-family: "Chewy", cursive;
+  font-size: 35px;
   color: #606c38;
   font-family: "Chewy", cursive;
   text-align: center;
   padding-right: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
+
 }
-#anuncios .card-deck {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 50px;
+
+.tarjetas{
+  display: flex;
+  flex-direction: row;
+  row-gap: 90px;
+  justify-content: space-around;
 }
+
+.tarjetas .card:hover{
+  transform: translateY(-15px);
+}
+
 #anuncios .card-deck .card {
   text-align: center;
+  box-shadow: 1px 5px 15px #a2a2a2;
+  height: auto;
+  width: auto;
 }
 #anuncios .card-deck .card img {
   height: 18.75rem;
-  width: 18.75rem;
+  width: 16.75rem;
   margin-left: 14%;
+}
+
+@media screen and (max-width: 480px){
+  #anuncios{
+    height: 150%;
+  }
+
+  #anuncios h3{
+    font-size: 14px;
+    padding-left: 15%;
+    padding-top: 5%;
+  }
+
+  .card-body{
+    font-size: 12px;
+  }
+
+  #anuncios .card-deck .card{
+    width: 200px;
+    height: 190px;
+  }
+
+  #anuncios .card-deck .card img{
+    height: 140px;
+    width: 140px;
+    padding-left: 10px;
+  }
+
+  #anuncios .card-deck .card h4 {
+    font-size: 10px;
+    margin-top: -15px;
+  }
+
+  #anuncios .card-deck .card p{
+    font-size: 9px;
+    margin-top: -10px;
+  }
+
+  #anuncios .card-deck .card .btn{
+    font-size: 8px;
+    padding: 2px 2px;
+    margin-top: -15px;
+  }
+
 }
 
 #Historias_felices {
   height: 400px;
 }
-#Historias_felices .txtcr {
+#Historias_felices h4 {
   font-size: 35px;
   color: #606c38;
   font-family: "Chewy", cursive;
   text-align: center;
   padding-top: 25px;
 }
-#Historias_felices .contenedor {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+#Historias_felices .maincarousel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-#Historias_felices .texto {
+
+#Historias_felices .maincarousel .texto{
+  margin-top: 8%;
+  padding: 40px 60px;
   text-align: center;
-  font-weight: 600;
-  margin-top: 15%;
-  font-size: 14px;
-  padding-left: 10%;
-  padding-right: 15%;
 }
-#Historias_felices .carousel-1 .carousel-item h5 {
+
+#Historias_felices .carousel-inner .carousel-item h5 {
   font-size: 20px;
   background-color: #1D2D44;
   font-family: "Poppins", sans-serif;
-  margin-top: -20%;
-  margin-right: 15%;
+  margin-bottom: 0%;
 }
-#Historias_felices .carousel-1 .carousel-item h5 p {
+#Historias_felices .carousel-inner .carousel-item p {
   font-size: 16px;
-  font-family: 14px;
   font-weight: bold;
-  margin-top: 10%;
-  border-radius: 7%;
-  padding-right: 15%;
+  border-radius: 3%;
   color: #1D2D44;
-  background-color: gainsboro;
+  background-color: #e9ecef;
+  margin-bottom: -1%;
+  
 }
+
+.carousel-control-prev{
+  border: none;
+  border-style: hidden;
+}
+
+.carousel-control-next{
+  border: none;
+  border-style: hidden;
+}
+
+
+@media screen and (max-width: 480px){
+  #Historias_felices{
+    height: 150%;
+  }
+  
+  #Historias_felices .maincarousel{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #Historias_felices h4{
+    font-size: 14px;
+  }
+
+  .maincarousel .texto{
+    font-size: 10px;
+    padding-top: 5px;
+    margin-top: auto;
+    padding-top: 10px;
+  }
+
+  #Historias_felices .carousel-inner .carousel-item h5{
+    font-size: 11px;
+  }
+
+  #Historias_felices .carousel-inner .carousel-item p{
+    font-size: 10px;
+  }
+
+  .carousel-inner img{
+    width: 80%;
+    height: 80%;
+    margin-left: 40px;
+  }
+
+}
+
 
 #ColaboraAlbergues {
   border-left: 0.5rem solid #1D2D44;
@@ -153,8 +309,8 @@ body {
   height: 400px;
 }
 #ColaboraAlbergues .VideoOne {
-  width: 150px;
   height: 150px;
+  width: fit-content;
   float: left;
   padding-top: 15px;
 }
@@ -163,13 +319,13 @@ body {
   padding: 70px 30px 20px 4px;
   margin-left: 20px;
 }
-#ColaboraAlbergues .container-video .txt2 {
+#ColaboraAlbergues .container-video h5 {
   font-size: 35px;
   font-family: "Chewy", cursive;
   color: #606c38;
   padding-top: 45px;
 }
-#ColaboraAlbergues .container-video .txt3 {
+#ColaboraAlbergues .container-video p {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -188,44 +344,92 @@ body {
   font-size: 18px;
 }
 
-.footer {
-  background-color: #1D2D44;
-  max-width: 1500px;
-  overflow: hidden;
-  font-size: 14px;
-  height: 80px;
+@media screen and (max-width: 480px){
+  #ColaboraAlbergues{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 30%;
+  }
+  
+  #ColaboraAlbergues .VideoOne{
+    display: none;
+  }
+
+  #ColaboraAlbergues .container-video h5{
+    font-size: 14px;
+    padding-top: 0;
+  }
+
+  #ColaboraAlbergues .container-video .btn{
+    font-size: 8px;
+    margin-bottom: 50px;
+  }
 }
-.footer .row {
-  color: whitesmoke;
+
+footer{
+  position: relative;
+  background-color: #1D2D44;
+}
+
+footer .main-content{
+  display: flex;
+  flex-direction: row;
+  color: #e9ecef;
+  justify-content: space-around;
+}
+
+footer .main-content .left-box img{
+  height: 70px;
+  padding: 10px 20px;
+}
+
+footer .center-box p{
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 15px;
   text-align: center;
 }
-.footer .col {
-  transition: all 0.4s ease;
+
+footer .center-box a{
+  color: #e9ecef;
 }
-.footer .col:hover {
-  padding-left: 30px;
+
+footer .right-box{
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
 }
-.footer .col-6 {
-  transition: all 0.4s ease;
+
+footer .right-box p{
+  margin-bottom: 4px;
 }
-.footer .col-6:hover {
-  padding-left: 30px;
+
+footer .socialmedia{
+  margin-top: 2px;
 }
-.footer .col-6 .final {
-  font-size: 17px;
-  margin-top: 27px;
+
+@media screen and (max-width: 480px){
+  footer .main-content{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .main-content .left-box img{
+    height: 40px;
+    width: auto;
+    margin-left: 90px;
+  }
+  footer .center-box p{
+    font-size: 9px;
+  }
+
+  footer .right-box{
+    font-size: 9px;
+    margin-top: 5px;
+  }
 }
-.footer .col-6 .final a {
-  color: whitesmoke;
-  text-decoration: underline;
-}
-.footer .col .img {
-  margin-right: 20px;
-}
-.footer .col .redessociales {
-  font-size: 17px;
-  margin-top: 21px;
-  margin-left: 27px;
-}
+
+
 
 /*# sourceMappingURL=stylemain.css.map */
